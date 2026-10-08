@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Página web minimalista con inicio, nosotros, productos y contactos.">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">Mi Sitio Web</a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio" data-page="inicio" class="nav-link active">Inicio</a>
+      <a href="#nosotros" data-page="nosotros" class="nav-link">Nosotros</a>
+      <a href="#productos" data-page="productos" class="nav-link">Productos</a>
+      <a href="#contactos" data-page="contactos" class="nav-link">Contactos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="page page-home active" aria-labelledby="home-title">
+      <div class="home-shape shape-one"></div>
+      <div class="home-shape shape-two"></div>
+      <h1 id="home-title">Aqui inicia la pagina de leccion</h1>
+    </section>
+
+    <section id="nosotros" class="page page-simple" aria-labelledby="about-title" hidden>
+      <h1 id="about-title">Vosotros y Ellos</h1>
+    </section>
+
+    <section id="productos" class="page page-products" aria-labelledby="products-title" hidden>
+      <h1 id="products-title">Productos</h1>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" alt="Auriculares negros" loading="lazy">
+          <p class="price">$50</p>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" alt="Zapatilla deportiva" loading="lazy">
+          <p class="price">$23</p>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" alt="Reloj de pulsera" loading="lazy">
+          <p class="price">$67</p>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85" alt="Mochila negra" loading="lazy">
+          <p class="price">$82</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contactos" class="page page-simple" aria-labelledby="contact-title" hidden>
+      <div class="contact-content">
+        <div class="whatsapp-icon" aria-hidden="true">✆</div>
+        <h1 id="contact-title">Whatsapp: 0909090909</h1>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-button" type="button" aria-label="Volver a la pestaña anterior">
+    <span aria-hidden="true">←</span> Atrás
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
